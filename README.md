@@ -18,8 +18,6 @@ Input        : tsv file
 
 Output       : tsv file
 
-Version: 1.0.0
-
 Parameters: 
 
 	label_mapping
@@ -52,6 +50,7 @@ Outputs:
 
 Seed: create_case_gene_type_titan.py create_case_gene_type_titan.pyc titanparser.py
 
+version: 1.0.1-1.0.0
 ```
 
 
@@ -154,5 +153,6 @@ python
 
 
 
-###Change Log
+###Changelog
+* 1.0.1-1.0.0: added test config
 

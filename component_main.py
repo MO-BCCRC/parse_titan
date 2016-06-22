@@ -19,7 +19,7 @@ class Component(ComponentAbstract):
     '''
 
     def __init__(self, component_name='parse_titan', component_parent_dir=None, seed_dir=None):
-        self.version = "1.0.0"
+        self.version = "1.0.1"
 
         ## initialize ComponentAbstract
         super(Component, self).__init__(component_name, component_parent_dir, seed_dir)

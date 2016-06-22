@@ -16,7 +16,7 @@ memory = '5G'
 
 requirements = {'python': 'python'}
 
-version = '1.0.0'
+version = '1.0.1'
 
 seed_version = '1.0.0'
 
