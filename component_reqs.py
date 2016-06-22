@@ -12,6 +12,10 @@ env_vars = {'LD_LIBRARY_PATH': None,}
 
 parallel = True
 
+parallel_params = []
+
+interval_file = None
+
 memory = '5G'
 
 requirements = {'python': 'python'}

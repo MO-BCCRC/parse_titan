@@ -1,41 +1,29 @@
 make_cmd_tests:
   normal_pipeline_args:
     args:
-      all_files: __OPTIONAL__
+      all_files: null
       chromosomes: null
-      genes: __OPTIONAL__
-      infile: __OPTIONAL__
-      label_mapping: __OPTIONAL__
-      normal_id: __OPTIONAL__
-      paramsfile: __OPTIONAL__
-      project: __OPTIONAL__
-      result: __REQUIRED__
+      genes: null
+      infile: /path/to/in
+      label_mapping: null
+      normal_id: nid
+      paramsfile: null
+      project: null
+      result: /path/to/out
       segment_size_threshold: '5000'
-      tumour_id: __OPTIONAL__
-      types: __OPTIONAL__
-    chunk: 'null'
+      tumour_id: tid
+      types: null
+    chunk: null
     output:
       cmd: python component_seed/create_case_gene_type_titan.py
       cmd_args:
-      - --label_mapping
-      - __OPTIONAL__
-      - --genes
-      - __OPTIONAL__
-      - --segment_size_threshold
-      - '5000'
-      - --tumour_id
-      - __OPTIONAL__
-      - --project
-      - __OPTIONAL__
-      - --normal_id
-      - __OPTIONAL__
-      - --result
-      - __REQUIRED__
-      - --all_files
-      - __OPTIONAL__
-      - --paramsfile
-      - __OPTIONAL__
-      - --infile
-      - __OPTIONAL__
-      - --types
-      - __OPTIONAL__
+            - --segment_size_threshold
+            - '5000'
+            - --infile
+            - /path/to/in
+            - --normal_id
+            - nid
+            - --result
+            - /path/to/out
+            - --tumour_id
+            - tid
